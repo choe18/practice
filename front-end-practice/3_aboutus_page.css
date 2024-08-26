@@ -1,0 +1,47 @@
+#bg {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+#maintext {
+    width: 100%;
+    height: 100px;
+    color: #ffffff;
+    position: absolute;
+    font-size: 150px;
+    font-family: "Judson", serif;
+    font-weight: bolder;
+    font-style: normal;
+    text-align: center;
+    position: absolute;
+    margin-top: 60px;
+}
+
+#icon {
+    width: 130px;
+    height: 140px;
+    vertical-align: middle;
+    margin-left: 100px;
+    margin-top: 80px;
+    position: absolute;
+}
+
+#img {
+    width: 3700px;
+    height: 3560px;
+    margin-top: 300px;
+    position: absolute;
+}
+
+#aboutus{
+    color: #ffffff;
+    font-family: "Judson", serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 120px;
+    font-weight: 600;
+    position: absolute;
+    margin-left: 3950px;
+    margin-top: 350px;
+}

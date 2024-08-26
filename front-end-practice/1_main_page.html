@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Inter'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1_main_page.css">
+</head>
+<body>
+    <div id="bg">
+    <div id="img">
+        <div id="header">
+        <div id="maintext">choe</div>
+        </div>
+        <div id="body">
+        <div id="shop">shop</div>
+        <div id="aboutus"><p>about us</p></div>
+    </div>
+
+    <script>
+        const $shop = document.getElementById('shop');
+        $shop.addEventListener('click', function(){
+            window.location.href = "2_shop_page.html";
+        });
+
+        const $aboutus = document.getElementById('aboutus');
+        $aboutus.addEventListener('click', function(){
+            window.location.href = "3_aboutus_page.html";
+        })
+    </script>
+
+    </div>
+</body>
+</html>

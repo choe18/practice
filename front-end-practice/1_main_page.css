@@ -1,0 +1,55 @@
+#img {
+    position: relative;
+    background-image: url(./images/homepage.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+#header {
+    width: 100%;
+    height: 10%;
+}
+
+#body {
+    width: 100%;
+    height: 40%;
+}
+
+#maintext {
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+    font-size: 150px;
+    color: #ffffff;
+    z-index: 2;
+    /* margin-top: 20px; */
+    margin-left: 200px;
+    /* text-align: center; */
+    font-family: "Judson", serif;
+    font-weight: bolder;
+    font-style: normal;
+    margin-top: 100px;
+}
+
+#shop {
+    position: absolute;
+    font-size: 100px;
+    color: #ffffff;
+    z-index: 2;
+    font-family: "Judson", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 7150px;
+    margin-top: 100px;
+}
+
+#aboutus {
+    position: absolute;
+    font-size: 100px;
+    color: #ffffff;
+    z-index: 2;
+    font-family: "Judson", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 7000px;
+    margin-top: 250px;
+}
