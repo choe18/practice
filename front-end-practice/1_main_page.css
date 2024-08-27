@@ -40,6 +40,7 @@
     font-style: normal;
     margin-left: 7150px;
     margin-top: 100px;
+    cursor: pointer;
 }
 
 #aboutus {
@@ -52,4 +53,57 @@
     font-style: normal;
     margin-left: 7000px;
     margin-top: 250px;
+    cursor: pointer;
 }
+
+
+/* 텍스트 밑줄 애니메이션 */
+.to-right-underline {
+    position: relative;
+  }
+.to-right-underline:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0px;
+    height: 5px;
+    margin: 5px 0 0;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.3s;
+    opacity: 0;
+    background-color: #ffffff;
+  }
+  .to-right-underline:hover:after {
+    width: 100%;
+    opacity: 1;
+  }
+
+
+/* 박스 호버 애니메이션 */
+.box {
+    width:100px;
+    height:100px;
+    border: 2px solid black;
+    transition: 1s 0.5s;
+    display:flex;
+    margin-left: 200px;
+    margin-top: 300px;
+    position: absolute;
+}
+
+.box:hover{
+    background: #d9d9d9;
+    width:300px;
+    /* height: 300px; */
+    
+}
+
+
+
+
+
+
+
+
+

@@ -14,13 +14,28 @@
         </header>
         <img id="icon" src="images/home icon3.png">
         <img id="img" src="images/aboutus.webp">
-        <p id="aboutus">about us</p>
+        <p id="aboutus">About us</p>
+        <p id="slash">/</p>
+        <p id="contact">Contact</p>
+        <p id="paragraph">
+            
+        </p>
     </div>
 
     <script>
         const $icon = document.getElementById('icon');
         $icon.addEventListener('click', function(){
             window.location.href = "1_main_page.html";
+        })
+
+        const $maintext = document.getElementById('maintext');
+        $maintext.addEventListener('click', function(){
+            window.location.href = "1_main_page.html";
+        })
+
+        const $Contact = document.getElementById('contact');
+        $Contact.addEventListener('click', function(){
+            window.location.href = "5_Contact_page.html"
         })
     </script>
 </body>
