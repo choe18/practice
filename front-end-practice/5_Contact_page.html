@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="5_Contact_page.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter'>
+</head>
+<body>
+    <div id="bg">
+        <header>
+            <div id="maintext">choe</div>
+        </header>
+        <img id="icon" src="images/home icon3.png">
+        <img id="img" src="images/aboutus.webp">
+        <p id="aboutus">About us</p>
+        <p id="slash">/</p>
+        <p id="contact">Contact</p>
+        <p id="paragraph1">
+            E-mail&nbsp;:&nbsp;rlorlrol562@gmail.com
+        </p>
+        <p id="paragraph2">
+        Tel&nbsp;:&nbsp;010-8665-9530  
+        </p>
+    </div>
+
+    <script>
+        const $icon = document.getElementById('icon');
+        $icon.addEventListener('click', function(){
+            window.location.href = "1_main_page.html";
+        })
+
+        const $maintext = document.getElementById('maintext');
+        $maintext.addEventListener('click', function(){
+            window.location.href = "1_main_page.html";
+        })
+
+        const $aboutus = document.getElementById('aboutus');
+        $aboutus.addEventListener('click', function(){
+            window.location.href = "3_aboutus_page.html"
+        })
+    </script>
+</body>
+</html>

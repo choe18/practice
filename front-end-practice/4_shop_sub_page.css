@@ -1,0 +1,166 @@
+#bg {
+    width: 7600px;
+    height: 3500px;
+}
+
+#maintext {
+    width: 100%;
+    height: 100px;
+    font-size: 150px;
+    font-family: "Judson", serif;
+    font-weight: bolder;
+    font-style: normal;
+    text-align: center;
+    position: absolute fixed;
+    cursor: pointer;
+}
+
+#arrowicon {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: -55px;
+    cursor: pointer;
+}
+
+#line1 {
+    border: 2px solid black;
+    margin-top: 80px;
+    position: absolute;
+}
+
+#left {
+    width: 50%;
+    height: 100hv;
+}
+
+#img {
+    width: 1800px;
+    height: 2200px;
+    margin-top: 300px;
+    margin-left: 800px;
+    position: absolute fixed;
+}
+
+#line2 {
+    border-left: thick solid #000;
+    height:100%;
+    left: 50%;
+    position: absolute fixed;
+    margin-top: -2515px;
+    margin-left: 3800px;
+}
+
+#right {
+    width: 50%;
+    height: 100vh;
+    margin-left: 50%;
+    margin-top: 370px;
+}
+
+#choe_text {
+    width: 100px;
+    height: 50px;
+    font-family: "Judson", serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 70px;
+    color: #736f6f;
+    position: absolute fixed;
+    margin-top: -3450px;
+    margin-left: 300px;
+    cursor: pointer;
+}
+
+#shop_text {
+    width: 100px;
+    height: 50px;
+    font-family: "Judson", serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 70px;
+    color: #736f6f;
+    position: absolute fixed;
+    margin-top: -120px;
+    margin-left: 500px;
+    cursor: pointer;
+}
+
+#necklace {
+    width: 500px;
+    height: 100px;
+    font-family: "Judson", serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 120px;
+    color: #000000;
+    position: absolute fixed;
+    margin-top: px;
+    margin-left: 298px;
+}
+
+#color {
+    width: 100px;
+    height: 50px;
+    font-family: "Judson", serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 70px;
+    color: #000000;
+    position: absolute fixed;
+    margin-top: 300px;
+    margin-left: 298px;
+}
+
+#circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+
+#option_name {
+    width: 100px;
+    height: 50px;
+    font-family: "Judson", serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 70px;
+    color: #000000;
+    position: absolute fixed;
+    margin-top: 150px;
+    margin-left: 298px;
+}
+
+#order_box {
+    width: 900px;
+    height: 230px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Judson", serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 80px;
+    text-align: center;
+    line-height: 230px;
+    margin-top: 280px;
+    margin-left: 290px;
+}
+
+#add-to-cart_box {
+    width: 900px;
+    height: 230px;
+    background-color: #d9d9d9;
+    color: #000000;
+    font-family: "Judson", serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 80px;
+    text-align: center;
+    line-height: 230px;
+    margin-top: -230px;
+    margin-left: 1190px;
+}
