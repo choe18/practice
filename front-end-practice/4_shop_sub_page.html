@@ -17,13 +17,14 @@
         border-width: 1px 0px 0px 0px; 
         margin-top: 100px;">
         <div id="left">
-        <img id="img" src="images/1.jpg">
+        <img id="img" src="images/pearl_necklace.jpg">
         </div>
         <div id="line2"></div>
         <div id="right">
         <p id="choe_text">choe/</p>
         <p id="shop_text">shop</p>
         <p id="necklace">pearl&nbsp;necklace</p>
+        <p id="price">₩300,000</p>
         <p id="color">color</p>
         <div id="circle"></div>
         <label><p id="option_name">option</p></label>
@@ -60,6 +61,16 @@
         const $shop = document.getElementById('shop_text');
         $shop.addEventListener('click', function(){
             window.location.href = "2_shop_page.html";
+        })
+
+        const $order = document.getElementById('order_box');
+        $order.addEventListener('click', function(){
+            alert(`품절되었습니다.`);
+        })
+
+        const $add = document.getElementById('add-to-cart_box');
+        $add.addEventListener('click', function(){
+            alert(`품절되었습니다.`);
         })
     </script>
 

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="6_pearl_page.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter'>
+</head>
+<body>
+    <div id="bg">
+        <header>
+            <div id="maintext">choe</div>
+        </header>
+        <hr style="border: 1px, solid, #000;
+        border-width: 1px 0px 0px 0px; 
+        margin-top: 100px;">
+        <p id="search">search&nbsp;result&nbsp;:&nbsp;</p>
+        <img id="img1" src="images/pearl_necklace.jpg">
+        <img id="img2" src="images/pearl_silver_ring.jpg">
+        <img id="img3" src="images/green_pearl_earring.jpg">
+
+        <p id="t1-1">pearl&nbsp;necklace</p>
+        <p id="t1-2">pearl&nbsp;silver&nbsp;ring</p>
+        <p id="t1-3">green&nbsp;pearl&nbsp;earring</p>
+    </div>
+    
+    <script>
+        const $img1 = document.getElementById('img1');
+        $img1.addEventListener('click', function(){
+            window.location.href = "4_shop_sub_page.html";
+        })
+
+        const $text = document.getElementById('t1-1')
+        $text.addEventListener('click', function(){
+            window.location.href = "4_shop_sub_page.html";
+        })
+    </script>
+</body>
+</html>

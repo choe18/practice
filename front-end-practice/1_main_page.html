@@ -16,6 +16,11 @@
         <div id="body">
         <div id="shop"><span class="to-right-underline">shop</span></div>
         <div id="aboutus"><span class="to-right-underline">about us</span></div>
+
+        <img id="search_icon" src="images/search.png">    
+        <form id="pearl" onsubmit="test()">
+            <input id="box" type="text" value="">
+       </form>
         
         
 
@@ -29,6 +34,11 @@
         $aboutus.addEventListener('click', function(){
             window.location.href = "3_aboutus_page.html";
         })
+
+        function test(e) {
+            var myForm = document.getElementById("pearl");
+            myForm.action="6_pearl_page.html";
+        }
     </script>
 
     </div>

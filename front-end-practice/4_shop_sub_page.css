@@ -100,6 +100,19 @@
     margin-left: 298px;
 }
 
+#price {
+        width: 100px;
+        height: 50px;
+        font-family: "Judson", serif;
+        font-weight: bolder;
+        font-style: normal;
+        font-size: 70px;
+        color: #000000;
+        position: absolute fixed;
+        margin-top: 100px;
+        margin-left: 298px;
+    }
+
 #color {
     width: 100px;
     height: 50px;
@@ -148,6 +161,7 @@
     line-height: 230px;
     margin-top: 280px;
     margin-left: 290px;
+    cursor: pointer;
 }
 
 #add-to-cart_box {
@@ -163,4 +177,11 @@
     line-height: 230px;
     margin-top: -230px;
     margin-left: 1190px;
+    cursor: pointer;
 }
+
+
+
+
+
+
