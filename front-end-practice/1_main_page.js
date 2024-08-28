@@ -11,4 +11,4 @@ $aboutus.addEventListener('click', function(){
 function test(e) {
     var myForm = document.getElementById("pearl");
     myForm.action="6_pearl_page.html";
-}
+} // pearl 입력 시 6_pearl_page.html 로 이동
