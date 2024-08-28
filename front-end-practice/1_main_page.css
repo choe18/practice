@@ -98,7 +98,8 @@
     /* height: 300px; 
 }*/
 
-#search_icon {
+
+/* #search_icon {
     width: 100px;
     height: 100px;
     position: absolute;
@@ -111,11 +112,31 @@
     width: 500px;
     height: 100px;
     background-color: transparent;
-    /* border: 2px solid black; */
     margin-left: 6860px;
     margin-top: -50px;
+    font-size: 60px; 
+} */
+
+#myInput {
+    width: 500px;
+    height: 80px;
+    background-color: transparent;
+    position: absolute;
+    margin-left: 6600px;
+    margin-top: 400px;
     font-size: 60px;
-}    
+}
+
+#button {
+    width: 200px;
+    height: 80px;
+    font-size: 50px;
+    margin-top: 400px;
+    position: absolute;
+    margin-left: 7150px;
+    background-color: transparent;
+}
+
     
 
 
