@@ -73,6 +73,26 @@
     cursor: pointer;
 }
 
+#paragraph_title {
+    color: #ffffff;
+    font-family: "Judson", serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 110px;
+    font-weight: 600;
+    position: absolute;
+    margin-left: 3950px;
+    margin-top: 500px;
+    width: 800px;
+    height: 300px;
+    /* position: absolute;
+    color: #ffffff;
+    font-size: 10px;
+    margin-left: 3000px; */
+    margin-top: 700px;
+    text-decoration: underline;
+}
+
 #paragraph {
     color: #ffffff;
     font-family: "Judson", serif;
@@ -89,4 +109,6 @@
     color: #ffffff;
     font-size: 10px;
     margin-left: 3000px; */
+    margin-top: 1000px;
+    line-height: 180%;
 }
