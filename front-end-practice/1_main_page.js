@@ -28,3 +28,16 @@ window.goPlaces = function(){
     alert("검색어를 입력하세요.");
 }  
 }
+
+
+
+
+var newWindow = null;
+
+        function launchApplication()
+        {
+        // open the new window only if newWindow is null (not opened yet)
+        // or if it was closed
+        if ((newWindow == null) || (newWindow.closed))
+        newWindow = window.open("8_popup_page.html", "popup", "width=400, height=500, history=no, resizable=no, status=no, scrollbars=yes, menubar=no");
+        }
