@@ -1,0 +1,55 @@
+#popupbody {
+    width: 1580px;
+    height: 1980px;
+}
+
+#cover {
+    width: 1580px;
+    height: 1980px;
+    background-color: rgb(0, 0, 0); opacity: 0.2;
+    z-index: 5;
+    position: absolute;
+}
+
+#popupimg {
+    width: 1580px;
+    height: 1980px;
+    z-index: 1;
+    position: absolute;
+}
+
+#text1 {
+    width: 1580px;
+    height: 100px;
+    text-align: center;
+    line-height: 1980px;
+    z-index: 100;
+    position: absolute;
+    font-size: 200px;
+    color: #ffffff;
+    margin-top: -450px;
+}
+
+#text2 {
+    width: 1580px;
+    height: 100px;
+    text-align: center;
+    line-height: 1980px;
+    z-index: 100;
+    position: absolute;
+    font-size: 200px;
+    color: #ffffff;
+    margin-top: -150px;
+}
+
+#text3 {
+    width: 1580px;
+    height: 100px;
+    text-align: center;
+    line-height: 1980px;
+    z-index: 100;
+    position: absolute;
+    font-size: 150px;
+    color: #ffffff;
+    margin-top: 250px;
+}

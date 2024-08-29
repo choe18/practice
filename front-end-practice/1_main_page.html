@@ -7,7 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="1_main_page.css">
 </head>
-<body>
+<body onLoad="javascript:popup()">
+    <!-- onLoad="javascript:popup()" -->
     <div id="bg">
     <div id="img">
         <div id="header">
@@ -24,7 +25,16 @@
         <form id="pearl" onsubmit="test()">
             <input id="box" type="text" value="">
        </form> -->
+
+
     </div>
     <script src="1_main_page.js"></script>
+    <script>
+        function popup(){
+  
+        window.open("8_popup_page.html", "popup", "width=400, height=500, history=no, resizable=no, status=no, scrollbars=yes, menubar=no")
+        
+        }
+    </script>
 </body>
 </html>

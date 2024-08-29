@@ -19,10 +19,10 @@ window.goPlaces = function(){
     var input = document.getElementById("myInput").value;
     switch(input){
     case 'pearl':
-    window.location.href = "http://127.0.0.1:5502/front-end-practice/6_pearl_page.html";
+    window.location.href = "6_pearl_page.html";
     break;
     case 'silver':
-    window.location.href = "http://127.0.0.1:5502/front-end-practice/7_silver_page.html";
+    window.location.href = "7_silver_page.html";
     break;
     default:
     alert("검색어를 입력하세요.");
