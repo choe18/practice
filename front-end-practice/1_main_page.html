@@ -6,8 +6,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="1_main_page.css">
+    <style>
+        #img {
+    position: relative;
+    background-image: url(./images/homepage.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+#header {
+    width: 100%;
+    height: 10%;
+}
+
+#body {
+    width: 100%;
+    height: 40%;
+}
+
+#maintext {
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+    font-size: 150px;
+    color: #ffffff;
+    z-index: 2;
+    /* margin-top: 20px; */
+    margin-left: 200px;
+    /* text-align: center; */
+    font-family: "Judson", serif;
+    font-weight: bolder;
+    font-style: normal;
+    margin-top: 100px;
+}
+
+#shop {
+    position: absolute;
+    font-size: 100px;
+    color: #ffffff;
+    z-index: 2;
+    font-family: "Judson", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 7150px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+#aboutus {
+    position: absolute;
+    font-size: 100px;
+    color: #ffffff;
+    z-index: 2;
+    font-family: "Judson", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 7000px;
+    margin-top: 250px;
+    cursor: pointer;
+}
+
+
+/* 텍스트 밑줄 애니메이션 */
+.to-right-underline {
+    position: relative;
+  }
+.to-right-underline:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0px;
+    height: 5px;
+    margin: 5px 0 0;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.3s;
+    opacity: 0;
+    background-color: #ffffff;
+  }
+  .to-right-underline:hover:after {
+    width: 100%;
+    opacity: 1;
+  }
+
+
+/* 박스 호버 애니메이션
+.box {
+    width:100px;
+    height:100px;
+    border: 2px solid black;
+    transition: 1s 0.5s;
+    display:flex;
+    margin-left: 200px;
+    margin-top: 300px;
+    position: absolute;
+}
+
+.box:hover{
+    background: #d9d9d9;
+    width:300px;
+    /* height: 300px; 
+}*/
+
+
+/* #search_icon {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-left: 6720px;
+    margin-top: -40px;
+}
+
+#box {
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    background-color: transparent;
+    margin-left: 6860px;
+    margin-top: -50px;
+    font-size: 60px; 
+} */
+
+#myInput {
+    width: 500px;
+    height: 80px;
+    background-color: transparent;
+    position: absolute;
+    margin-left: 6600px;
+    margin-top: 400px;
+    font-size: 60px;
+}
+
+#button {
+    width: 200px;
+    height: 80px;
+    font-size: 50px;
+    margin-top: 400px;
+    position: absolute;
+    margin-left: 7150px;
+    background-color: transparent;
+}
+    </style>
 </head>
-<body onLoad="javascript:popup()">
+<body onLoad="javascript:launchApplication()">
     <!-- onLoad="javascript:popup()" -->
     <div id="bg">
     <div id="img">
@@ -18,7 +158,7 @@
         <div id="shop"><span class="to-right-underline">shop</span></div>
         <div id="aboutus"><span class="to-right-underline">about us</span></div>
 
-        <input id="myInput" value="">
+        <input id="myInput" value="" onkeyup="enterkey()" class="input">
         <button id="button" onClick="goPlaces()">search</button>
 
         <!-- <img id="search_icon" src="images/search.png">    
@@ -30,11 +170,52 @@
     </div>
     <script src="1_main_page.js"></script>
     <script>
-        function popup(){
-  
-        window.open("8_popup_page.html", "popup", "width=400, height=500, history=no, resizable=no, status=no, scrollbars=yes, menubar=no")
-        
+        var newWindow = null;
+
+        function launchApplication()
+        {
+        // open the new window only if newWindow is null (not opened yet)
+        // or if it was closed
+        if ((newWindow == null) || (newWindow.closed))
+        newWindow = window.open("8_popup_page.html", "popup", "width=400, height=500, history=no, resizable=no, status=no, scrollbars=yes, menubar=no");
         }
+
+
+        // function popup(){
+        // window.open("8_popup_page.html", "popup", "width=400, height=500, history=no, resizable=no, status=no, scrollbars=yes, menubar=no")
+        // }
+
+
+        // function popup(){
+        // if(typeof(winRef) == 'undefined' || winRef.closed){
+        // //create new
+        // winRef = window.open("8_popup_page.html", "popup", "width=400, height=500, history=no, resizable=no, status=no, scrollbars=yes, menubar=no");
+        // } else {
+        // //it exists, load new content (if necs.)
+        // winRef.location.href = '1_main_page.html';
+        // //give it focus (in case it got burried)
+        // winRef.focus();
+        // }
+        // }
+
+
+        // function popup(){
+        // window.open("8_popup_page.html", "popup", "width=400, height=500, history=no, resizable=no, status=no, scrollbars=yes, menubar=no")
+        // }
+
+
+        // var winRef;
+        // function popupAction(){
+        // if(winRef == null){
+        // winRef = window.open("8_popup_page.html", "popup", "width=400, height=500, history=no, resizable=no, status=no, scrollbars=yes, menubar=no");
+        // }else{
+        // if (winRef.closed == false) {
+        // winRef.focus();
+        // }else{
+        // winRef = window.open("8_popup_page.html", "popup", "width=400, height=500, history=no, resizable=no, status=no, scrollbars=yes, menubar=no");
+        // }
+        // }
+        // }
     </script>
 </body>
 </html>
