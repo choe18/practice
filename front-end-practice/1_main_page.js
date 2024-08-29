@@ -30,8 +30,6 @@ window.goPlaces = function(){
 }
 
 
-
-
 var newWindow = null;
 
         function launchApplication()

@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="1_main_page.css">
 </head>
 <body onLoad="javascript:launchApplication()">
-    <!-- onLoad="javascript:popup()" -->
     <div id="bg">
     <div id="img">
         <div id="header">
@@ -20,51 +19,7 @@
 
         <input id="myInput" value="" onkeyup="enterkey()" class="input">
         <button id="button" onClick="goPlaces()">search</button>
-
-        <!-- <img id="search_icon" src="images/search.png">    
-        <form id="pearl" onsubmit="test()">
-            <input id="box" type="text" value="">
-       </form> -->
-
-
     </div>
     <script src="1_main_page.js"></script>
-    <script>
-        // function popup(){
-        // window.open("8_popup_page.html", "popup", "width=400, height=500, history=no, resizable=no, status=no, scrollbars=yes, menubar=no")
-        // }
-
-
-        // function popup(){
-        // if(typeof(winRef) == 'undefined' || winRef.closed){
-        // //create new
-        // winRef = window.open("8_popup_page.html", "popup", "width=400, height=500, history=no, resizable=no, status=no, scrollbars=yes, menubar=no");
-        // } else {
-        // //it exists, load new content (if necs.)
-        // winRef.location.href = '1_main_page.html';
-        // //give it focus (in case it got burried)
-        // winRef.focus();
-        // }
-        // }
-
-
-        // function popup(){
-        // window.open("8_popup_page.html", "popup", "width=400, height=500, history=no, resizable=no, status=no, scrollbars=yes, menubar=no")
-        // }
-
-
-        // var winRef;
-        // function popupAction(){
-        // if(winRef == null){
-        // winRef = window.open("8_popup_page.html", "popup", "width=400, height=500, history=no, resizable=no, status=no, scrollbars=yes, menubar=no");
-        // }else{
-        // if (winRef.closed == false) {
-        // winRef.focus();
-        // }else{
-        // winRef = window.open("8_popup_page.html", "popup", "width=400, height=500, history=no, resizable=no, status=no, scrollbars=yes, menubar=no");
-        // }
-        // }
-        // }
-    </script>
 </body>
 </html>
