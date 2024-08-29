@@ -45,12 +45,12 @@
 
 #text3 {
     width: 1580px;
-    height: 100px;
+    height: 50px;
     text-align: center;
     line-height: 1980px;
     z-index: 100;
     position: absolute;
-    font-size: 150px;
+    font-size: 120px;
     color: #ffffff;
     margin-top: 250px;
 }

@@ -119,6 +119,7 @@
 }
 
 #text2-3 {
+    color: #afaeae;
     width: 300px;
     height: 100px;
     font-size: 60px;
@@ -128,6 +129,7 @@
     margin-left: 6300px;
     margin-top: 230px;
     position: absolute;
+    text-decoration:line-through;
 }
 
 #img4 {
@@ -234,6 +236,18 @@
     font-weight: bolder;
     font-style: normal;
     margin-left: 3700px;
+    margin-top: -550px;
+    position: absolute;
+}
+
+#text5-2 {
+    width: 300px;
+    height: 100px;
+    font-size: 60px;
+    font-family: "Judson", serif;
+    font-weight: bolder;
+    font-style: normal;
+    margin-left: 6300px;
     margin-top: -550px;
     position: absolute;
 }
