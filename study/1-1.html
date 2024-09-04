@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" id="naver"><label>네이버</label><br>
+    <input type="radio" id="google"><label>구글</label><br>
+    <input type="radio" id="melon"><label>멜론</label>
+
+    <script>
+        const $naver = document.getElementById('naver')
+        $naver.addEventListener('click', function(){
+            window.location.href = "https://www.naver.com/";
+        })
+
+        const $google = document.getElementById('google')
+        $google.addEventListener('click', function(){
+            window.location.href = "https://www.google.com/";
+        })
+
+        const $melon = document.getElementById('melon')
+        $melon.addEventListener('click', function(){
+            window.location.href = "https://www.melon.com/";
+        })
+    </script>
+</body>
+</html>

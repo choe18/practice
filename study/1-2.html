@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main {
+            width: 300px;
+            height: 400px;
+            border: 1px solid black;
+            text-align: center;
+            
+        #login {
+            margin-top: 100px;
+            font-weight: 700;
+        }
+
+
+        #id {
+            margin-top: 30px;
+        }
+
+        #cancle {
+            margin-top: 10px;
+            margin-left: -70px;
+            position: absolute;
+        }
+
+        #confirm {
+            margin-top: 10px;
+            position: absolute;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p id="login">Login</p>
+        <div id="id">
+        <label>ID</label>&nbsp;<input type="text">
+        </div> <br>
+        <div>
+        <label>password</label>&nbsp;<input type="text">
+        </div>
+        <button id="cancle">취소</button> 
+        <button id="confirm">확인</button> 
+    </div>
+
+    <script>
+        const $btn = document.getElementById("confirm");
+        $btn.addEventListener('click', function(){
+            alert(`로그인 성공!`);
+        })
+    </script>
+</body>
+</html>
