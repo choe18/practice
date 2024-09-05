@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn {
+            width: 200px;
+            height: 80px;
+            border-radius: 8px;
+            color: #ffffff;
+            background-color: blue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Click for Alert</button><br>
+    <input type="radio" id="Google"><label>Google</label>
+    <input type="radio" id="Naver"><label>Naver</label>
+    <input type="radio" id="YouTube"><label>YouTube</label>
+
+    <script>
+        const btn = document.getElementById("btn");
+        btn.addEventListener('click', function(){
+            alert(`버튼이 클릭되었습니다`)
+        })
+
+        const Google = document.getElementById('Google')
+        Google.addEventListener('click', function(){
+            window.location.href = "https://google.com/";
+        })
+
+        const Naver = document.getElementById('Naver');
+        Naver.addEventListener('click', function(){
+            window.location.href = "https://www.naver.com";
+        })
+
+        const YouTube = document.getElementById('YouTube');
+        YouTube.addEventListener('click', function(){
+            window.location.href = "https://www.youtube.com/";
+        })
+    </script>
+</body>
+</html>
