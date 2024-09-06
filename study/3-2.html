@@ -27,17 +27,11 @@
             alert(`버튼이 클릭되었습니다`)
         })
 
-        const Google = document.getElementById('Google')
-        // Google.addEventListener('click', setTimeout(function() {
-        //     window.location.href = "https://google.com/";
-        // }), 5000)
-        function () {
-            setTimeout(5000);
-        } catch (e) {
-            'click', function() {
-                
-            }
-        }
+        
+        const Google = document.getElementById('Google');
+        Google.addEventListener('click', function(){
+            window.location.href = "https://google.com"
+        })
 
         const Naver = document.getElementById('Naver');
         Naver.addEventListener('click', function(){
