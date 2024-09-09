@@ -29,18 +29,21 @@
 
         
         const Google = document.getElementById('Google');
-        Google.addEventListener('click', function(){
-            window.location.href = "https://google.com"
+        Google.addEventListener('click', function google(){
+            window.location.href = "https://google.com";
+            setTimeout(google(), 5000);
         })
 
         const Naver = document.getElementById('Naver');
-        Naver.addEventListener('click', function(){
+        Naver.addEventListener('click', function naver(){
             window.location.href = "https://www.naver.com";
+            setTimeout(naver(), 5000);
         })
 
         const YouTube = document.getElementById('YouTube');
-        YouTube.addEventListener('click', function(){
+        YouTube.addEventListener('click', function youtube(){
             window.location.href = "https://www.youtube.com/";
+            setTimeout(youtube(), 5000);
         })
     </script>
 </body>
